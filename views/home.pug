@@ -1,0 +1,41 @@
+extends base.pug
+
+block scripts 
+    script (src="../static/index.js")
+block style 
+    style
+        include ../static/style.css
+block content
+    section#introSection 
+        div Welcome to Shakib's dance Academy
+        div.small Eat Dance Sleep repeat
+    section#misionSection 
+        h2 Our Mission
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="../static/dance1.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nam?
+        div.card
+            h3 Dance is not a hobby, it's a passion
+            div.card-box
+                div.card-img
+                    img(src="../static/dance2.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nam?
+        div.card
+            h3 Professional Dance Teaching
+            div.card-box
+                div.card-img
+                    img(src="../static/dance3.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nam?
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsor
+            img(src="../static/paypal.png", alt="Sponsor Image", class= "spimg")
+            img(src="../static/apple.png", alt="Sponsor Image", class= "spimg")
+            img(src="../static/telegram.png", alt="Sponsor Image", class= "spimg")
+            img(src="../static/ebay.png", alt="Sponsor Image", class= "spimg")

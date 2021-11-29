@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title This is Shakib's Dance Academy
+        block scripts
+        block style 
+    body
+        nav#navbar 
+            ul 
+                div#logo
+                    img(src="../static/logo.png")
+                    | #[a(href = "/") SDA]
+                li #[a(href = "/") Home]
+                li #[a(href = "/about") About]
+                li #[a(href = "/services") Services]
+                li #[a(href = "/info") Class Info]
+                li #[a(href = "/contact") Contact Us]
+        block content 
+        footer#footer 
+            | Copyright &copy 2021 www.shakibhasansdanceacademy.com | All rights researved

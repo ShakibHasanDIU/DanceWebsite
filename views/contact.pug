@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts 
+    script (src="../static/index.js")
+block style 
+    style
+        include ../static/style.css
+        include ../static/contact.css
+block content
+    div.container
+        h1 Fill this form to sign in 
+        form(action="/contact", method="post" class="myForm")
+            p.name Name:
+            input(type="text", name = "name", class="myInput", placeholder = "Enter your name")
+            p.name Phone Number:
+            input(type="phone", name = "phone", class="myInput", placeholder = "Enter your phone number")
+            p.name Date of birth:
+            input(type="date", name = "age", class="myInput", placeholder = "Enter your phone age")
+            p.name Email:
+            input(type="email", name = "email", class="myInput", placeholder = "Enter your email")
+            p.name Address:
+            input(type="text", name = "address", class="myInput", placeholder = "Enter your address")
+            p.name About yourself:
+            textarea(name="textarea", cols="30", rows="10", class="myInput", placeholder="Enter about yourself") 
+            button(class="btn") Submit
